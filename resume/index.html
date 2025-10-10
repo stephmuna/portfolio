@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav>
@@ -11,16 +12,19 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../contact/index.html">Contact</a></li>
             <li><a href="../projects/index.html">Projects</a></li>
-            <li><a href="../resume/index.html">Resume</a></li>
+            <li><a href="../resume/index.html" class="current">Resume</a></li>
             
         </ul>
+    </nav>
     
 
     <h1> Resume</h1>
 
+    <div class="page">
+
     <header>
-        <h1>Munachimso Ndubisi</h1>
-        <p>
+        <h1 class="name">Munachimso Ndubisi</h1>
+        <p class = "info">
           <a href="mailto:munandubisi5@gmail.com">munan3dubisi5@gmail.com</a> |
           <a href="tel:+15306089100">530-608-2150</a> |
           <a href="https://linkedin.com/in/munachimso-ndubisi">LinkedIn</a> |
@@ -69,7 +73,7 @@
           <h2>Projects</h2>
           <article>
             <h3>E-Commerce Transaction Fraud Detection</h3>
-            <time datetime="2025-06">Jun 2025</time> – <time datetime="2025-08">Aug 2025</time>
+            <span class="dates">Jun 2025 – Aug 2025</span>
             <ul>
               <li>Developed a Weighted Random Forest model on imbalanced fraud dataset</li>
               <li>Improved fraud recall by 14% while maintaining high precision (0.87)</li>
@@ -78,7 +82,7 @@
     
           <article>
             <h3>Recipe Ratings & Nutrition Analysis</h3>
-            <time datetime="2025-05">May 2025</time> – <time datetime="2025-06">Jun 2025</time>
+            <span class="dates"> May 2025 - Jun 2025</span>
             <p><a href="http://bit.ly/4lZrBhG">Project Website</a></p>
             <ul>
               <li>Engineered dataset of 83K recipes + 732K reviews</li>
@@ -88,7 +92,7 @@
     
           <article>
             <h3>NBA All-Star Prediction</h3>
-            <time datetime="2025-04">Apr 2025</time> – <time datetime="2025-06">Jun 2025</time>
+            <span class="dates"> Apr 2025 - Jun 20205</span>
             <ul>
               <li>Analyzed 2800+ NBA players using regression and visualization</li>
               <li>Confirmed statistical significance of performance metrics</li>
@@ -100,7 +104,7 @@
           <h2>Leadership</h2>
           <article>
             <h3>VP Communications/Event Coordinator – ColorStack UCSD</h3>
-            <time datetime="2024-08">Aug 2024</time> – <time datetime="2024-10">Oct 2024</time>
+            <span class="dates"> Aug 2025 - Present</span>
             <ul>
               <li>Directed outreach initiatives to increase membership</li>
               <li>Planned and executed social + networking events</li>
@@ -108,6 +112,7 @@
           </article>
         </section>
       </main>
+    </div>
     
 </body>
 </html>
