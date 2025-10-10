@@ -110,6 +110,7 @@ body {
   .page :is(h1, h2, h3, h4, h5, h6) {
     line-height: 1.1;
     text-wrap: balance;
+    margin-bottom: 0.25rem
   }
   
   .page h1 {
@@ -144,6 +145,42 @@ body {
     white-space: nowrap;
     font-weight: 500; /* optional */
   }
+  .page .market {
+    display: flex;
+    justify-content: space-between; 
+    align-items: baseline;            
+    margin-bottom: 0.25rem;
+  }
+  
+  .page .market h3 {
+    margin: 0;
+  }
+  
+  .page .market .dates {
+    white-space: nowrap;            
+    font-weight: 500;               
+  }
+
+  .page article {
+    margin-bottom: 1.5rem;  
+  }
+
+  .page .btn {
+    text-decoration: none;
+    background: none;
+    border: 2px solid var(--color-accent, #007bff);
+    color: var(--color-accent, #007bff);
+    padding: 0.4em 1em;
+    border-radius: 0.4em;
+    
+  }
+  
+  .page .btn:hover {
+    background-color: var(--color-accent, #007bff);
+    color: white;
+  }
+  
+  
 
   
   
