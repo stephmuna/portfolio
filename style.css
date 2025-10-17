@@ -1,3 +1,7 @@
+html{
+  color-scheme: light dark;
+}
+
 body {
     
     font: 100%/1.5 system-ui;
@@ -16,11 +20,14 @@ body {
   }
   
   nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 1em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
+
+    
   }
   
   
@@ -34,6 +41,8 @@ body {
   nav a.current {
     border-bottom: 0.4em solid #ccc;  
     padding-bottom: 0.6em; 
+    border-bottom-color: var(--border-color);
+
   }
 
   :root {
@@ -44,7 +53,9 @@ body {
   nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.6em; 
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+    border-bottom-color: var(--border-color);
+
   }
 
   input,
@@ -102,7 +113,8 @@ body {
     max-width: 75ch;
     margin: 2.5rem auto;
     padding: 2rem;
-    background: #fff;
+    background: canvas;      /* system surface for both modes */
+    color: canvastext;       /* readable text for both modes */
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
   }
@@ -179,6 +191,26 @@ body {
     background-color: var(--color-accent, #007bff);
     color: white;
   }
+
+  nav{
+    --border-color: oklch(50% 10% 200 / 40%);
+    border-bottom-color: var(--border-color);
+    
+  }
+
+  .color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+  }
+
+  
+
+
+
+
   
   
 
