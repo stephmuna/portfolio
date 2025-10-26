@@ -206,6 +206,33 @@ body {
     font-family: inherit;
   }
 
+  #profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #profile-stats dt {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    grid-row: 1;
+  }
+  
+  #profile-stats dd {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;  
+    grid-row: 2;
+  }
+
+  #profile-stats {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
   
 
 

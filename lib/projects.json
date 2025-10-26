@@ -1,0 +1,80 @@
+[ {
+      "title": "GroceryDB Expository Visualization",
+      "year": "2025",
+      "image": "../images/wholefoods.png",
+      "description": "Designed an explanatory visualization exploring pricing and category patterns; emphasized narrative structure and accessibility."
+    },
+    {
+      "title": "GitHub Stats & Latest Projects Widget v5",
+      "year": "2025",
+      "image": "../images/v4.png",
+      "description": "Integrated GitHub Users API and JSON project feed; rendered stats grid and latest three projects with vanilla JS modules."
+    },
+    {
+      "title": "Portfolio Website v1-v3",
+      "year": "2025",
+      "image": "../images/pp.png",
+      "description": "Modular site with JSON-driven projects; serves as a foundation for future labs."
+    },
+    {
+      "title": "Nutrigression — Recipe & Nutrition Analysis (DSC 80)",
+      "year": "2025",
+      "image": "../images/nutri.png",
+      "description": "Cleaned recipe datasets, engineered nutrition features, and modeled relationships between ingredients and macro outcomes; shipped a public write-up."
+    },
+    {
+      "title": "AI4ALL: E-commerce Fraud Detection",
+      "year": "2024",
+      "image": "../images/ecommerce.png",
+      "description": "Implemented logistic/weighted random forest with fairness checks; tracked macro-F1 and recall; delivered an explainable model write-up and demo."
+    },
+      
+    {
+        "title": "NBA All-Star Prediction",
+        "year": "2025",
+        "image": "../images/nba.png",
+        "description": "Analyzed NBA player statistics to predict NBA All-Star game selection trends across positions and seasons, focusing on efficiency metrics and standout players; "
+      },
+      {
+      "title": "Loan Application Visualization",
+      "year": "2025",
+      "image": "../images/int.png",
+      "description": "Analyzed bank data to understand trends with loan borrowing and repayment"
+    },
+    {
+      "title": "NSBE/ColorStack Event Analytics & Outreach",
+      "year": "2025",
+      "image": "../images/nsb.png",
+      "description": "Tracked event interest and attendance; iterated on outreach copy and captions; produced simple dashboards to inform planning."
+    },
+    {
+      "title": "Beats Externship: Market Insights Dashboard",
+      "year": "2024",
+      "image": "../images/beats.png",
+      "description": "Analyzed multi-source consumer feedback for a forthcoming Beats release; built Python NLP + visualization dashboards to surface key selling points and pain points."
+    },
+    
+    {
+      "title": "MTS Transit: Navigating San Diego's Bus Network 🚌",
+      "year": "2024",
+      "image": "../images/mts.png",
+      "description": "In-depth exploration of the San Diego Metropolitan Transit System (MTS). Analyzed the complexities of urban transit through a real life dataset.By working with this dataset, you will gain practical experience in data visualization, algorithmic analysis, and urban planning"
+    },
+    
+    
+{
+      "title": "Meteorite Drop Analysis",
+      "year": "2023",
+      "image": "../images/meteorite.png",
+      "description": "Analyzed global meteorite landing records to explore patterns in mass, location, and discovery frequency; identified trends across geography and time using exploratory data analysis and visualization."
+
+    },
+    {
+      "title": "Lyric Search Tool ",
+      "year": "2023",
+      "image": "../images/lyrics.png",
+      "description": "Built a fast lyric lookup with indexing and phrase matching; delivered a clean UI and evaluation on popular corpora."
+    }
+    
+  ]
+  
