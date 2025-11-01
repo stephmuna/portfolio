@@ -16,8 +16,8 @@ const searchInput = document.querySelector('.searchBar');
 
 
 function setQuery(val) {
-  query = val;
-  return projects.filter((project) => project.title.includes(query));
+  query = val.toLowerCase();
+  return projects.filter((project) => project.title.toLowerCase().includes(query));
 }
 
 let selectedIndex = -1
