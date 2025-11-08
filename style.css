@@ -206,14 +206,16 @@ body {
     font-family: inherit;
   }
 
-  #profile-stats dl {
+  #profile-stats dl ,
+  #stats dl {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     text-align: center;
   }
 
-  #profile-stats dt {
+  #profile-stats dt,
+  #stats dt {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -221,14 +223,16 @@ body {
     grid-row: 1;
   }
   
-  #profile-stats dd {
+  #profile-stats dd ,
+  #stats dd {
     font-size: 2rem;
     font-weight: 600;
     margin: 0;  
     grid-row: 2;
   }
 
-  #profile-stats {
+  #profile-stats,
+  #stats {
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -314,6 +318,148 @@ path {
 
 path { cursor: pointer; }
 
+.stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .25rem .75rem;
+  margin: 1rem 0;
+}
+
+.stats dt {
+  font-weight: 600;
+  color: #322f2f;
+}
+
+.stats dd {
+  margin: 0;
+  color: #111;
+}
+
+.gridlines line {
+  stroke: #ccc;       
+  stroke-opacity: 0.4;
+}
+
+.gridlines path {
+  stroke: none;       
+}
+
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .25rem .75rem;
+  margin: 0;
+}
+dl.info dt { color: #666; font-size: .9rem; }
+dl.info dd { margin: 0; }
+
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+  padding: .5rem .75rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  display: none;            
+}
+
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+circle:hover { transform: scale(1.5); }
+
+/* Base info grid (reusable) */
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .25rem .75rem;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+dl.info dt { color: #666; font-size: .9rem; }
+dl.info dd { margin: 0; }
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Tooltip look & feel */
+.tooltip {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.85);  /* or use #fff if you don’t want translucency */
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  /* make it look elevated */
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  backdrop-filter: saturate(180%) blur(6px); 
+  padding: .6rem .8rem;
+
+  
+  z-index: 1000;
+  pointer-events: none;       
+  display: none;              
+  max-width: min(42ch, 70vw);
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+#language-breakdown.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.25rem 2rem;
+  align-items: start;
+}
+
+
+
+.lang-block {
+  text-align: center;
+  font-family: monospace;
+}
+
+.lang-title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: .4rem;
+}
+
+.lang-lines {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.lang-pct {
+  font-size: 1.3rem;
+  opacity: 0.75;
+}
 
 
   
