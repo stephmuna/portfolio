@@ -1,4 +1,13 @@
-[ {
+[ 
+  
+{
+  "title": "CityCycle: Boston Bike Traffic Visualization",
+  "year": "2025",
+  "image": "https://stephmuna.github.io/portfolio/images/CityCycle.png",
+  "description": "Used Mapbox and D3 to create an interactive visualization of bike traffic in Boston; highlighted usage patterns and popular routes.",
+  "url": "https://stephmuna.github.io/citycycle/"
+},
+{
       "title": "GroceryDB Expository Visualization",
       "year": "2025",
       "image": "https://stephmuna.github.io/portfolio/images/wholefoods.png",
@@ -20,7 +29,8 @@
       "title": "Nutrigression — Recipe & Nutrition Analysis (DSC 80)",
       "year": "2025",
       "image": "https://stephmuna.github.io/portfolio/images/nutri.png",
-      "description": "Cleaned recipe datasets, engineered nutrition features, and modeled relationships between ingredients and macro outcomes; shipped a public write-up."
+      "description": "Cleaned recipe datasets, engineered nutrition features, and modeled relationships between ingredients and macro outcomes; shipped a public write-up.",
+      "url": "https://stephmuna.github.io/nutrigression/"
     },
     {
       "title": "AI4ALL: E-commerce Fraud Detection",
@@ -75,6 +85,8 @@
       "image": "https://stephmuna.github.io/portfolio/images/lyrics.png",
       "description": "Built a fast lyric lookup with indexing and phrase matching; delivered a clean UI and evaluation on popular corpora."
     }
+    
+
     
   ]
   
